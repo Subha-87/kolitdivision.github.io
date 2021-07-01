@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITDIVISION</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/bootnavbar.css">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/js/bootnavbar.js"></script>
+
+    <style>
+        /* .header {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 200px;
+            border: 1px solid red;
+
+        }
+
+        #logo {
+            border: 2px solid rgb(62, 47, 197);
+            margin: 3px;
+            text-align: center;
+            padding: 5px;
+            margin: 10px;
+
+
+        }
+
+        #title {
+            border: 2px solid rgb(75, 18, 233);
+            margin: 3px;
+            background-color: rgb(61, 141, 245);
+            text-align: center;
+            padding: 5px;
+            margin: 10px;
+        }
+
+        #rightend {
+
+            border: 2px solid rgb(75, 18, 233);
+            margin: 3px;
+            text-align: center;
+            padding: 5px;
+            margin: 10px;
+
+        }
+
+        img {
+            width: 200px;
+            height: 150px;
+            object-fit: contain;
+
+        }*/
+
+
+        #footer {
+            background-color: rgb(28, 27, 44);
+            color: #fff;
+            font-family: monospace;
+        }
+
+        .para {
+            font-size: 15px;
+        }
+
+        
+        
+
+        .btn-info {
+            transition: 0.3s;
+            letter-spacing: 2px;
+            font-size: 15px;
+        }
+
+       /* .btn-info:hover {
+            background-color: #346fcf;
+        }*/
+
+      /*  h3 {
+            color: #86b1f7;
+            font-size: 32px;
+        }*/
+
+        .img-fluid {
+            height: 150px;
+        }
+
+        #sir {
+            height: 200px;
+            width: 200px;
+        }
+
+        .blink_me {
+            animation: blinker 1s linear infinite;
+        }
+        .footer-heading {
+            margin-bottom: 30px;
+
+        }
+
+        .list-unstyled li {
+
+            padding: 5px;
+
+        }
+
+        .list-unstyled li a{
+            color: cyan;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .list-unstyled li a:hover {
+            
+            color: white;
+        }
+
+        .ficon li {
+            display: inline-block;
+            margin: 5px 15px;
+            padding-left: 17px;
+            font-size: 25px;
+            
+
+
+
+        }
+
+        .ficon li a {
+
+            color: #fff;
+            transition: 0.5s ease-in-out;
+            
+            
+           
+            
+
+        }
+
+        .ficon li a:hover{
+
+            color: rgb(37, 50, 243);
+            
+        }
+        h2{
+            margin-top: 20px;
+        }
+        .lable{
+            display: block;
+            float: left;
+            text-align: right;
+            font-weight: bold;
+            margin-right: 10px;
+            width: 100px;
+        }
+
+        input.submit{
+            margin-left: 100px;
+        }
+
+        .navbar-nav>li{
+            border-right: 1px solid #bbb;
+        }
+
+        .navbar-nav>li a{
+            font-weight: bold;
+        }
+        .navbar-nav li a:hover{
+            background-color: rgb(43, 202, 123);
+            border-radius: 5px;
+            transition: 0.5s ease-in-out;
+            
+            
+        }
+        
+       
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <div class="row text-center ">
+
+            <div class="col-md-2 border border-primary " style="background-color: wheat;">
+                <img src="/3.png" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-md-8 " style="background-color: #6183e0; color: ghostwhite;">
+                <h1>Welcome To Kolkata IT Division</h1>
+                <h2>Public Work Directorate</h2>
+                <h3>Main Block,Ground Floor
+                    Writers Building,Kolkata-700 001
+                </h3>
+            </div>
+
+            <div class="col-md-2 border border-primary" style="background-color: wheat;">
+                <img src="/2.png" class="img-fluid " alt="">
+            </div>
+
+        </div>
+
+    </div>
+    <nav class="navbar navbar-expand-md bg-dark  font-weight-bolder" style="font-size: 20px;">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nsc">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nsc">
+            <ul class="navbar-nav ">
+                <li class="nav-item px-3"><a class="nav-link text-white " href="#">Home</a></li>
+                <li class="nav-item px-3"><a class="nav-link text-white " href="#">About Us</a></li>
+                <li class="nav-item dropdown px-3"><a class="nav-link dropdown-toggle text-white " href="#"
+                        data-toggle="dropdown">Download</a>
+
+                    <ul class="dropdown-menu" style="background-color: rgb(192, 246, 255);">
+                        <li><a class="dropdown-item" href="#">News</a></li>
+                        <li><a class="dropdown-item" href="#">Event</a></li>
+                        <li><a class="dropdown-item" href="#">Notification/Circular</a></li>
+                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#"
+                                data-toggle="dropdown">Order</a>
+
+                            <ul class="dropdown-menu" style="background-color: rgb(192, 246, 255);">
+                                <li><a class="dropdown-item" href="#">Admin</a></li>
+                                <li><a class="dropdown-item" href="#">Work</a></li>
+                                <li><a class="dropdown-item" href="#">Allotment</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown px-3"><a class="nav-link dropdown-toggle text-white" href="#"
+                        data-toggle="dropdown">Tender</a>
+
+                    <ul class="dropdown-menu" style="background-color: rgb(192, 246, 255);">
+                        <li><a class="dropdown-item" href="#">Online</a></li>
+                        <li><a class="dropdown-item" href="#">Offline</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item px-3"><a class="nav-link text-white " href="#">Gallery</a></li>
+                <li class="nav-item px-3"><a class="nav-link text-white" href="#">Contact Us</a></li>
+                <li class="nav-item px-3"><a class="nav-link text-white" href="#">E-Governance Initiatives</a></li>
+            </ul>
+        </div>
+
+        <form class="form-inline" action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+
+
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-md-2 ">
+
+                <div class="row">
+                    <div class="col-md-12 " style="background-color: rgb(218, 245, 164);">
+                        <h2 class="text-center ">SERVICES</h2>
+                        <ul class=" text-primary font-weight-bold" style="font-size: large;">
+                            <li class="py-1">IP & DATA-Networking</li>
+                            <li class="py-1">VOIP & Telephone</li>
+                            <li class="py-1">Audio & Video Conference</li>
+                            <li class="py-1">Software & Hardware</li>
+                            <li class="py-1">CCTV Survillance</li>
+                            <li class="py-1">PA System</li>
+                            <li class="py-1">Miscellaneous</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-12 " style="background-color: rgb(246, 165, 156);">
+                        <h2 class="text-center">ACTIVE PROJECTS</h2>
+
+
+                        <div class="btn-group-vertical">
+
+                            <div class="dropdown dropright">
+
+                                <button type="button"
+                                    class="btn btn-primary btn-outline-danger dropdown-toggle text-white"
+                                    data-toggle="dropdown">
+                                    NABANNA
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">SOBHAGHAR</a></li>
+                                    <li><a class="dropdown-item" href="#">UPANNA</a></li>
+                                    <li><a class="dropdown-item" href="#">HOWRAH</a></li>
+                                </ul>
+                            </div>
+                            <button type="button" class="btn btn-primary btn btn-outline-danger text-white">WRITERS
+                                BUILDING</button>
+                            <button type="button"
+                                class="btn btn-primary btn-outline-danger text-white">HIGHCOURT</button>
+                            <button type="button" class="btn btn-primary btn-outline-danger text-white">LINK1</button>
+                            <button type="button" class="btn btn-primary btn-outline-danger text-white">LINK2</button>
+                            <button type="button" class="btn btn-primary btn-outline-danger text-white">LINK3</button>
+                        </div>
+
+
+
+                    </div>
+                      <div class="col-md-12" style="background-color: powderblue;">
+                        <h5 class="my-1">Technical Info</h5>
+                      <ul class="list-unstyled" >
+                          <li><i class="fa fa-angle-double-right"></i>Visitor Counts :</li>
+                          <li><i class="fa fa-angle-double-right"></i>Launched On :</li>
+
+                          
+                      </ul>
+                      </div>
+                </div>
+                 
+                      
+                 
+                  
+
+
+            </div>
+
+            <div class="col-md-8 ">
+
+                <div class="row">
+                    <div class="col-md-9 ">
+
+                        <img src="/004.jpg" class="img-thumbnail" alt="" >
+                    </div>
+
+                    <div class="col-md-3" style="background-color: lightyellow;">
+                        
+                        <p class="text-justify text-primary mt-3" style="font-weight: bold; font-family: Verdana, Geneva, Tahoma, sans-serif;">Welcome to the Official Website of Kolkata IT Division,Department of
+                            Public Work Directorate.
+                            The IT Division is responsible for installation and maintenance of the follwing service at
+                            The State
+                            Secretariate,Governor House,State Assembly House,Highcourt and Multiple State Goverment
+                            Bhavan. <br>
+
+                            1)Total Telecommunication Network including the dedicated systems for the Hon'ble Chief
+                            Minister
+                            Office and other VVIPs at 13 & 14th. <br>
+                            2) WI-FI System. <br>
+                            3) Video Conferencing System. <br>
+                            4) Total Cable Network. <br>
+                            5) CCTV Survillance System. <br>
+                            6) Total Public Address System. <br>
+
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="col-md-12 " style="background-color: rgb(243, 195, 153);">
+
+                        
+                            <p style="font-weight: bold;" class="my-1"> Shri Malay Ghatk,Hon'ble Minister-In-Charge</p>
+                            <p style="font-weight: bold;" > Shri Naveen Prakash,IAS,Additional Cheif Secretary</p>
+                            <marquee direction="left" onmouseover="stop()" onmouseout="start()"  >
+                                <a class="text-primary font-weight-bolder my-2" style="font-size: 20px;" href="/ITLIST2.html"><img src="/new-icon-gif-4.jpg" style="height: 20px; width: 20px;" alt=""> Notice : COVID-19 2nd Does User Name List & Venue ,Date & Time </a>
+                            </marquee>
+
+                           
+
+                       
+
+                    </div>
+                    
+                    
+                </div>
+
+
+
+
+            </div>
+
+
+
+            <div class="col-md-2 ">
+
+                <div class="row">
+                   <div class="col-md-12 " style="background-color: cornflowerblue;">
+                    <h3 class="text-center">Shri Susipra Mallik</h3>
+                <img src="/4.jpg" class="rounded-circle mx-auto d-block" id="sir" alt="">
+                
+                <p style="font-weight: bold;" class="text-center">Executive Engineer,Kolkata IT Division</p>
+                   </div>
+                </div>
+
+                <div class="row "  >
+                    <div class="col-md-12" style="background-color: rgb(184, 250, 168);">
+                        <h3 class="text-center"> Video Confenrecing</h3>
+                        <nav class="nav flex-column ">
+                            <a class="nav-link font-weight-bold" href="https://zoom.us/">ZOOM LINK <img src="/new-icon-gif-4.jpg" style="height: 40px; width: 40px;" alt=""></a>
+                            <a class="nav-link font-weight-bold" href="#">SWAN LINK</a>
+                            <a class="nav-link font-weight-bold" href="#">NIC LINK</a>
+                            <a class="nav-link font-weight-bold" href="https://meet.google.com/">GOOGLE MEET</a>
+                            <a class="nav-link font-weight-bold" href="#">MICROSOFT MEET</a>
+                            <a class="nav-link font-weight-bold" href="#">SKYPE</a>
+                            
+                        </nav>
+                          
+                        <h5 class="my-2" style="color: crimson; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Please Log In :</h5>
+                        <form action="#" class="py-1">
+                            <div>
+                                <label for="username" class="px-1">Username</label>
+                                <input type="text" name="username">
+                            </div>
+
+                            <div>
+                                <label for="password" class="px-1">Password</label>
+                                <input type="password" name="password">
+                            </div>
+
+                            <div>
+                                <input type="submit" class="submit mx-1 my-1 bg-primary text-white" style="border-radius: 5px;" value="Log In">
+                            </div>
+                        </form>
+                    </div>
+
+                   
+                </div>
+                
+
+                
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-white" style="background-color: rgb(17, 5, 26);">
+        <div class="row text-cente">
+            <div class="col-md-3 ">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="mx-3" >ABOUT</h2>
+                        <div class="container">
+                            <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Blanditiis, atque?</p>
+                            <p style="color: chartreuse; font-size:15px;"><i class="fa fa-map-marker" style="color: rgb(255, 81, 0); font-size: 30px;"></i> &nbsp;&nbsp; 325,Sarat Chatterjee Road,
+                                Mandirtala,Howrah -711102
+                            </p>
+
+                            <p style="color: chartreuse;"><i class="fa fa-phone" style="color: rgb(251, 255, 0); font-size: 30px;"></i> &nbsp;&nbsp;(+91)03322143801,03322535096</p>
+                            <p style="color: chartreuse;"><i class="fa fa-envelope" style="color: rgb(103, 122, 231); font-size: 30px;"></i> &nbsp;&nbsp;eeitpwd@wb.gov.in | eeitpwd@gmail.com</p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <h3 class="mx-3">Follow Us</h3>
+                        <ul class="ficon text-left">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+
+
+                        </ul>
+                    </div>
+
+                    <p class="font-weight-bold font-italic mx-3" style="font-size: 1rem;">Copyright @2021 All Right Reserved
+                        | Subhajit Das</p>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="col-md-2 ">
+                <h2 class="footer-heading">CATAGORIES</h2>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="py-1 d-block">Buy & Sell</a></li>
+                    <li><a href="#" class="py-1 d-block">Mercent</a></li>
+                    <li><a href="#" class="py-1 d-block">Giving Back</a></li>
+                    <li><a href="#" class="py-1 d-block">Help & Support</a></li>
+                    <li><a href="#" class="py-1 d-block">Clients</a></li>
+                </ul>
+
+            </div>
+
+
+
+            <div class="col-md-2">
+                <h2 class="footer-heading">RESOURCES</h2>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="py-1 d-block">Blog</a></li>
+                    <li><a href="#" class="py-1 d-block">NewsLetter</a></li>
+                    <li><a href="#" class="py-1 d-block">Private Policy</a></li>
+                    <li><a href="#" class="py-1 d-block">Security</a></li>
+                    <li><a href="#" class="py-1 d-block">Global</a></li>
+
+                </ul>
+            </div>
+
+            <div class="col-md-2">
+                <h2 class="footer-heading">INFORMATION</h2>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="py-1 d-block">Team</a></li>
+                    <li><a href="#" class="py-1 d-block">Products</a></li>
+                    <li><a href="#" class="py-1 d-block">Pricing</a></li>
+                    <li><a href="#" class="py-1 d-block">Contact</a></li>
+                    <li><a href="#" class="py-1 d-block">Documentation</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h2>CONTACT US</h2>
+                <form action="#" class="contact-form mt-3">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+
+                    <div class="form-group ">
+                        <input type="text" name="email" placeholder="Your Email" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="" id="" cols="30" rows="3" class="form-control">Messages</textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    
+</body>
+
+</html>
+
+<script type="text/javascript">
+    $(function () {
+        $("#bootnavbar").bootnavbar();
+    });
+</script>
